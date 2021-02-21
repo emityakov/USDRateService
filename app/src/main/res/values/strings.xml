@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ServiceExample</string>
+    <string name="usd_rate">USD rate:</string>
+    <string name="refresh_rate">Refresh rate</string>
+    <string name="target_rate">Target rate</string>
+    <string name="target_rate_empty">Target rate is empty</string>
+    <string name="current_rate_empty">Current rate is empty</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="nearest_atm">Nearest ATM</string>
+    <string name="find_nearest_atm">Find Nearest ATM</string>
+    <string name="location_permission_error">Location permission not granted</string>
+    <string name="location_resolving_error">Unable to determine current location</string>
+    <string name="notification_text">Current USD rate is %s RUB</string>
+</resources>
