@@ -1,5 +1,6 @@
 package com.example.serviceexample
 
+import android.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
@@ -19,9 +20,14 @@ class RateCheckInteractor {
     }
 
     private fun parseRate(jsonString: String): String {
-        return JSONObject(jsonString)
-            .getJSONObject("rates")
-            .getJSONObject("USDRUB")
-            .getString("rate")
+        try {
+            return JSONObject(jsonString)
+                .getJSONObject("rates")
+                .getJSONObject("USDRUB")
+                .getString("rate")
+        } catch (e: Exception) {
+            Log.e("RateCheckInteractor", "", e)
+        }
+        return ""
     }
 }
